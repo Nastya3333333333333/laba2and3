@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl records</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+        <div class="turntable">
+            <h1>Vinyl records </h1>
+          <div class="record">
+            <div class="inner"></div>
+          </div>
+          <div class="overlay"></div>
+          <div class="arm-holder">
+            <div class="arm"></div>
+          </div>
+          <div class="dial"></div>
+          
+        </div>
+    <div onclick="myFunction()" class="container">
+      <label>
+        <input class="play-btn" type="checkbox">
+        <div class="play-icon"></div>
+        <div class="pause-icon"></div>
+      </label>
+    </div>
+    <nav>
+        <ul>
+            <button class="button" onclick="loadPosts('Rock')">Rock</button>
+            <button class="button" onclick="loadPosts('Pop')">Pop</button>
+            <button class="button" onclick="loadPosts('Musicals')">Musicals</button>
+            <button class="button" onclick="loadPosts('Jazz')">Jazz</button>
+            <button class="button" onclick="loadPosts('Rap')">Rap</button>
+            <button class="button" onclick="loadPosts('Alternative')">Alternative</button>
+        </ul>
+    </nav>
+    <button id="myBtn">Cart</button>
+    
+</div>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p> <div class="container">
+      <form class="form-contacts">
+          <div class="form-group row">
+              <label for="client-name" class="col-4 col-form-label">Your name:</label>
+              <input class="form-control col-8" type="text" id="client-name" name="name" required>
+          </div>
+          <div class="form-group row">
+              <label for="client-email" class="col-4 col-form-label">Your email:</label>
+              <input class="form-control col-8" type="email" id="client-email" name="email" required>
+          </div>
+      </form>
+      <div class="basket-items"></div>
+        <div class="basket-summary">
+      <p>Total Items: <span class="basket-items-count" id="cart-items">0</span></p>
+    <p>Total Price: <span class="basket-total-price" id="data-price">$0.00</span></p>
+  </div>
+  <button onclick="clearBasket()" class="clear-button">Clear Basket</button>
+</div>
+<div class="basket-items">
+</div>
+<div class="basket-items-count"></div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary order">Order</button>
+</div>
+</div>
+</div> </p>
+  </div>
+
+</div>
+    
+    <div id="container" class="cardContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
